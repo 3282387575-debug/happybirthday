@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: radial-gradient(
+      ellipse at top,
+      #1c1252 0%,
+      #0a0420 55%,
+      #050010 100%
+    )
+    fixed;
+  font-family: 'Manrope', system-ui, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+}
+
+.glass-strong {
+  background: rgba(20, 8, 50, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(
+    100deg,
+    #fff5d1 0%,
+    #ffd479 35%,
+    #ffb84d 60%,
+    #ffe6a8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shadow-warm {
+  box-shadow: 0 0 24px rgba(255, 184, 77, 0.35),
+    0 0 60px rgba(255, 110, 163, 0.18);
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
